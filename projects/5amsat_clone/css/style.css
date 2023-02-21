@@ -4,7 +4,15 @@
   padding: 0;
   font-family: 'Cairo', sans-serif;
 }
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
 
+/* navbar section */
 .navbar{
   position: fixed;
   width: 100%;
@@ -20,14 +28,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 18%;
+  /* width: 10%; */
 }
 .Rnav{
   margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  /* width: 50%; */
+}
+
+.cat{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 8px;
 }
 
 .Lnav img {
@@ -49,5 +65,12 @@
 }
 .icon, i{
   color: #f8f9fa;
-  
+  font-size: 12px; 
+  padding: 5px;
+}
+
+/* header section */
+
+.main_head img{
+  width: 100%;
 }
