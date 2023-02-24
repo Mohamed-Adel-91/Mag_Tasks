@@ -121,6 +121,9 @@
 }
 
 .search_div input {
+  position: relative;
+  display: flex;
+  justify-content: end;
   border: none;
   background-color: #f8f9fa;
   padding: 30px 310px;
@@ -133,8 +136,14 @@
   border: none;
   color: #f8f9fa;
   background-color: #52b035;
-  padding: 20px;
+  padding: 20px 30px;
   top: 10px;
   left: 10px;
 }
 
+::placeholder {
+  color: #343a40;
+  position: absolute;
+  left: 75%;
+
+}
