@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color:  bisque;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --font_color_1: #8a99a0;
+  --font_color_2: #526168;
+  --font_color_3: #edf8ff;
+  --underline_nav_link: #958da6;
+  --deliver_word: #7c2c8d;
+}
+
+/* navbar section */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  height: 150px;
+}
+
+.left_nav{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 150px;
+}
+
+.left_nav a, .right_nav a{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 150px;
+  padding: 10px;
+  color: var(--font_color_1);
+}
+
+.right_nav{
+  display: flex;
+  justify-content: center;
+}
