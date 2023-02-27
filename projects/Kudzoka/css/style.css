@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-  background-color:  bisque;
+
 }
 
 html{
@@ -12,38 +12,122 @@ html{
 
 :root{
   --font_color_1: #8a99a0;
-  --font_color_2: #526168;
+  --font_color_2: #434f55;
   --font_color_3: #edf8ff;
-  --underline_nav_link: #958da6;
+  --underline_nav_link: #c1b6d7;
   --deliver_word: #7c2c8d;
 }
 
 /* navbar section */
 .navbar{
+  position: absolute;
   display: flex;
   justify-content: space-between;
   text-align: center;
   height: 150px;
+  width: 100%;
 }
 
+.blue_bg{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: -4;
+}
+
+/* left nav */
 .left_nav{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  text-align: center;
-  height: 150px;
+  text-align: start;
+  width: 50%;
+  height: 120px;
 }
 
-.left_nav a, .right_nav a{
+.logo{
+  position: relative;
+  top: 20px;
+  left: 50px;
+  width: 180px;
+  height: 90px;
+  cursor: pointer;
+}
+
+
+li, a, button{
   text-decoration: none;
-  display: flex;
+  display: inline-block;
   justify-content: space-around;
-  text-align: center;
-  height: 150px;
-  padding: 10px;
+  padding: 0px 10px;
   color: var(--font_color_1);
+  font-weight: 700;
+  font-size: 16px;
+  list-style: none;
 }
 
+.left_nav li a {
+  transition: all 0.3s ease 0s;
+  position: relative;
+  top: 50px;
+} 
+
+.left_nav li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: var(--underline_nav_link);
+  margin: auto;
+  display: block;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.left_nav li a:hover{
+  color: var(--font_color_2);
+}
+
+
+.left_nav li a:hover::after{
+  width: 100%;
+  margin-top: 7px;
+  transition: width 0.3s linear;
+  -webkit-transition: width 0.3s linear;
+  -moz-transition: width 0.3s linear;
+  -ms-transition: width 0.3s linear;
+  -o-transition: width 0.3s linear;
+}
+
+/* right nav  */
 .right_nav{
   display: flex;
   justify-content: center;
+  width: 30%;
 }
+
+button {
+  padding: 9px 25px;
+  background-color: #ffffff;
+  color: var(--font_color_1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  top: 40px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+button:hover{
+  background-color: var(--underline_nav_link);
+  color:var(--font_color_2)
+}
+
+/* End nav bar  */
+
