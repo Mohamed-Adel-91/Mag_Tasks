@@ -30,7 +30,7 @@ body{
   text-align: center;
   height: 150px;
   width: 100%;
-  z-index: 50;
+  z-index: 500;
 }
 
 #blue_bg {
@@ -50,6 +50,7 @@ body{
   text-align: start;
   width: 50%;
   height: 120px;
+  z-index: 500;
 }
 
 .logo {
@@ -61,8 +62,8 @@ body{
   cursor: pointer;
 }
 
-li,
-a,
+.left_nav2 li,
+.left_nav2 a,
 button {
   text-decoration: none;
   display: inline-block;
@@ -113,6 +114,7 @@ button {
   display: flex;
   justify-content: center;
   width: 30%;
+  z-index: 500;
 }
 
 button {
@@ -413,17 +415,13 @@ button:hover {
 .footer_pg{
   background-image: url("../img/Footer/Group1131.png");
   width: 100%;
-  height: 600px;
+  height: 700px;
   position: absolute;
   bottom: 0;
   background-position: center;
   background-repeat: no-repeat;
-  background-position-x: -50px;
-  background-position-y: -110px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  flex-direction: column;
+  background-position-x: -40px;
+  background-position-y: -88px;
 }
 
 #footer_man{
@@ -435,6 +433,108 @@ button:hover {
 
 .Footer_icons{
   position: absolute;
-  left: 100px;
-  bottom: 150px;
+  left: 80px;
+  bottom: 20px;
+  width: 800px;
+}
+
+.social_media{
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+}
+
+.social_media img{
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer_links li, .footer_links a{
+  text-decoration: none;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 0px 10px;
+  color: var(--font_color_3);
+  font-weight: 600;
+  font-size: 20px;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer_links li a {
+  transition: all 0.3s ease 0s;
+  top: 50px;
+}
+
+.footer_links li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--underline_nav_link);
+  margin: auto;
+  display: block;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.footer_links li a:hover {
+  color: var(--underline_nav_link);
+  font-weight: 800;
+}
+
+.footer_links li a:hover::after {
+  width: 100%;
+  margin-top: 7px;
+  transition: width 0.3s linear;
+  -webkit-transition: width 0.3s linear;
+  -moz-transition: width 0.3s linear;
+  -ms-transition: width 0.3s linear;
+  -o-transition: width 0.3s linear;
+}
+
+.phone_stores{
+  display: flex;
+}
+
+.apple_store{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 90px;
+  border: 1px solid var(--font_color_3);
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: var(--font_color_3);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.apple_store_text {
+  padding: 20px;
+} 
+
+.apple_store_text p{
+  font-size: 13px;
+  
+  color: var(--font_color_2);
+}
+
+.apple_store_text h3{
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--font_color_2);
+}
+
+.apple_store_icon{
+  padding-left: 20px;
 }
